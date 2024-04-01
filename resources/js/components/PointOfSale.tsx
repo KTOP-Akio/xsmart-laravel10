@@ -125,6 +125,7 @@ class PointOfSale extends Component<Props, State> {
     };
 
     getCategories = (): void => {
+        console.log("ASDASD");
         httpService
             .get(`inventory/categories`)
             .then((response: any) => {

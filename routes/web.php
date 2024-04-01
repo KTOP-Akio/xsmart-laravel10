@@ -151,6 +151,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::delete('/users/{user}', [\App\Http\Controllers\UserController::class, 'destroy'])->name('users.destroy');
 
     Route::get('/inventory', [\App\Http\Controllers\InventoryController::class, 'show'])->name('inventory.index');
+    Route::post('/inventory/close', [\App\Http\Controllers\InventoryController::class, 'close'])->name('inventory.close');
+    Route::get('/inventory/{inventoryHistory}/print', [\App\Http\Controllers\InventoryController::class, 'print'])->name('inventory.print');
     // Route::get('/inventory', [\App\Http\Controllers\InventoryController:class, 'index']))->name('inventory.index');
 
     //API

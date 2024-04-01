@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Transaction;
 use App\Models\Customer;
 use App\Models\Drawer;
+use App\Models\Inventory;
 use App\Models\Order;
 use App\Models\OrderDetail;
 use App\Models\Product;
@@ -449,6 +450,17 @@ class OrderController extends Controller
             $drawer->order_id = $order->id;
             $drawer->amount = $tender_amount;
             $drawer->save();
+        }
+
+        if ($this->hasCashDrawer()) {
+            $Inventory = new Inventory();
+            $Inventory->order_id = $order->id;
+            if ($request->has('customer')) {
+                $customer = (object) $request->customer;
+                $Inventory->customer_id = $customer->id;
+            }
+            $Inventory->amount = $tender_amount;
+            $Inventory->save();
         }
 
         foreach ($cart as $cartItem) {
