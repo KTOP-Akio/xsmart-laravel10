@@ -5,7 +5,7 @@
     <div class="row align-items-center justify-content-center">
         <div class="col-md-4">
             <div class="text-center mb-3">
-                <div class="fs-1 text-primary fw-bolder">XSMART</div>
+                <div class="fs-1 text-primary fw-bolder">SKY</div>
                 <div>Application ID 7BS31237-H222C-B30C-0B481246D1-05FF</div>
                 <div>Version 1.0.6</div>
                 <div class="small text-muted">

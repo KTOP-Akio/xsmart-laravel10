@@ -96,7 +96,7 @@ class Settings extends Model
 
 
     public static $settingsValues = [
-        self::STORE_NAME => "XSmart",
+        self::STORE_NAME => "SKY",
         self::STORE_ADDRESS => "Address",
         self::STORE_PHONE_NUMBER => "+961 XXXXXXXXX",
         self::STORE_WEBSITE => "",

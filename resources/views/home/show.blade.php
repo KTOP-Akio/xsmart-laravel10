@@ -45,6 +45,15 @@
         <div class="col-md-4 mb-3 d-flex align-items-stretch">
             <x-card class="clickable-cell">
                 <div class="text-center">
+                    <img src="{{ asset('images/webp/inventory.jfif') }}" height="100" class="mb-3" alt="box">
+                    <h3>@lang('Inventories')</h3>
+                    <a href="{{ route('inventory.index') }}" class="stretched-link"></a>
+                </div>
+            </x-card>
+        </div>
+        <div class="col-md-4 mb-3 d-flex align-items-stretch">
+            <x-card class="clickable-cell">
+                <div class="text-center">
                     <img src="{{ asset('images/webp/box.webp') }}" height="100" class="mb-3" alt="box">
                     <h3>@lang('Items')</h3>
                     <a href="{{ route('products.index') }}" class="stretched-link"></a>

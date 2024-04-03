@@ -57,7 +57,7 @@
             <x-card class="mb-3" >
                 <div class="card-title h4 text-muted">@lang('Pricing')</div>
 
-                <x-currency-input label="Cost" name="cost" disabled="@if (Auth::user()->is_cashier) true @endif"
+                <x-currency-input label="Cost" name="cost"
                     value="{{ old('cost', isset($product) ? $product->cost : '') }}" />
 
                 <x-currency-input label="Sale Price" name="sale_price"
