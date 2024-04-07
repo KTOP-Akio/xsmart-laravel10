@@ -599,7 +599,7 @@ class PointOfSale extends Component<Props, State> {
 
         receipt.document.write(`<div style="margin-bottom: 1.5rem;text-align: center !important;">`);
         if (settings.storeName) {
-            receipt.document.write(` <div style="padding-right: 1rem;padding-left: 1rem;margin-bottom: 0.5rem">${settings.logo}</div>`);
+            receipt.document.write(` <div style="padding-right: 1rem;padding-left: 1rem;margin-bottom: 0.5rem; width: 200px; margin: auto;">${settings.logo}</div>`);
         } else {
             if (settings.storeName) {
                 receipt.document.write(`<div style="font-size: 1.50rem;">${settings.storeName}</div>`);
